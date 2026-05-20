@@ -42,6 +42,15 @@ public abstract class Personatge {
         }
     }
 
+    public void rebreCuracio(int curacio) {
+        if (estaViu) {
+            vidaActual = vidaActual + curacio;
+            if (vidaActual > VIDA_INICIAL) {
+                vidaActual = VIDA_INICIAL;
+            }
+        }
+    }
+
     public boolean esViu() {
         return estaViu;
     }

@@ -13,6 +13,15 @@ public class UI {
         return personatges.get(escollit-1);
     }
 
+    public static int escollirAccioCurandera(Personatge curandera) {
+        System.out.println();
+        System.out.println("És el torn de " + curandera.getNom());
+        System.out.println("Que vols fer " + curandera.getNom() + "?");
+        System.out.println("1. Atacar");
+        System.out.println("2. Curar un company");
+        return entrada.nextInt();
+    }
+
     public static void mostrarPersonatgesIVida(ArrayList<Personatge> personatges) {
         int i = 0;
         for (Personatge p : personatges) {
